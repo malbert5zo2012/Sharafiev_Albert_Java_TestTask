@@ -8,10 +8,7 @@ import java.util.Scanner;
 public class TestTask3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите длину числового массива: ");
-        int a = scanner.nextInt();
-        System.out.print("Введите массив чисел: ");
-        for (int i = 0; i < a; i++) {
+        while (scanner.hasNext()) {
             int b = scanner.nextInt();
             if (b % 3 == 0)
                 System.out.println(b);
